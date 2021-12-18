@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*This section for the Header*/
+/*This section for the Header*/
+/*This section for the Header*/
+/*This section for the Header*/
+.header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: transparent; /*change the background color*/
+    z-index: 100000;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu{
+    width: 400px;
+    float:left;
+    height: 70px;
+}
+
+/*Header Regi*/
+.header_reg{
+    position: center;
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: gray; /*change the background color*/
+    z-index: 100000;
+}
+.navbar_reg{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon_reg{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo_reg{
+    color: black;
+    font-size: 35px;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu_reg{
+    width: 400px;
+    float:left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 55px;
+    margin-top: 27px;
+    font-size: 15px;
+}
+
+ul li a{
+    text-decoration: none ;
+    color: white;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #DAAD86;
+}
+
+.search1{
+    width: 300px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch1{
+    font-family: "Montserrat", Helvetica, sans-serif;
+    width: 200px;
+    height: 40px;
+    float: left;
+    background: transparent;
+    border-top: 1px solid #DAAD86;
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn1{
+    width:100px;
+    height: 40px;
+    background: #DAAD86;
+    border: 2px solid #DAAD86;
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn1:focus{
+    outline: none;
+}
+
+.srch1:focus{
+    outline: none;
+    color: white;
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    /*background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0,0,0,0.8)50%);*/
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 110px;
+    margin-left: 95px;
+    z-index: 100000;
+}
+
+.form h1{
+    width: 220px;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    background-color: darkgray;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 200px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #DAAD86;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    color:black
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    font-family: "Montserrat", Helvetica, sans-serif;
+    color: black;
+}
+
+.btnn1{
+    width: 200px;
+    height: 40px;
+    background: #DAAD86;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 00.1s ease;
+}
+
+.btnn1:hover{
+    background: white;
+    color: #DAAD86;
+}
+
+.btnn1 a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.form .link{
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a{
+    text-decoration: none;
+    color: white;
+}
+
+.liw{
+    padding-top: 20px;
+    padding-bottom: 0px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.icon a {
+    text-decoration: none;
+    color: black;
+}
+
+.icon ion-icon{
+    color: white;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-top: -5px;
+    transition: 0.3s ease;
+}
+
+.icon ion-icon:hover{
+    color: #DAAD86;
+}
+
+
+
+
+
+
+
+/*This section for the Hero Video*/
+/*This section for the Hero Video*/
+/*This section for the Hero Video*/
+/*This section for the Hero Video*/
+#hero{
+    height: 100vh;
+    width: 100%;
+    background-color: #DCD5DC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero::after{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /*video background color*/
+}
+
+#hero video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    object-fit:cover;
+    font-family: 'object-fit: cover'; /*to fit to internet expl;orer*/
+}
+
+#hero .texture{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    background: url('../Images/Image/cross-stripes_background.png');
+}
+
+#hero .caption{
+    width: 1400px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    z-index: 20;
+    color: white;
+    /*position: relative;
+    z-index: 20;
+    color: white;*/
+}
+
+#hero .caption h1{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    /*text-transform: uppercase;
+    font-size: 2em;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    margin-bottom: 0.5rem;*/
+}
+
+#hero .caption h2{
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    /*font-weight: 400;
+    font-size: 1.5rem;
+    margin: 0;
+    font-family: "Montserrat", Helvetica, sans-serif;*/
+}
+
+
+@media screen and (min-width: 768px) /*Media Sizes phone, ipad and desktop*/
+{
+    #hero .caption h1{
+        font-size: 2.5rem;
+    }
+    #hero .caption h2{
+        font-size: 1.75rem;
+    }
+}    
+
+@media screen and (min-width: 992px)
+{
+    #hero .caption h1{
+        font-size: 3rem;
+    }
+    #hero .caption h2{
+        font-size: 2rem;
+    }
+}   
+
+@media screen and (min-width: 1200px)
+{
+    #hero .caption h1{
+        font-size: 4rem;
+    }
+    #hero .caption h2{
+        font-size: 2.5rem;
+    }
+}   
+
+
+
+
+
+
+/*This section for the Cards*/
+/*This section for the Cards*/
+/*This section for the Cards*/
+/*This section for the Cards*/
+
+.background {
+	background-color:#FAF9F6;
+}
+
+
+/*SoloPack*/
+.btnn_Solo{
+    width: 200px;
+    height: 40px;
+    background: #DAAD86;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 00.1s ease;
+}
+
+.img_solo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    height: auto;
+    border-radius: 8px;
+    transform: scaleX(-1);
+  }
+  .background_solo {
+    background-color: gra;
+  }
+
+
+
+
+
+/*This section for the footer*/
+/*This section for the footer*/
+/*This section for the footer*/
+/*This section for the footer*/
+.footer{
+    /*width: 100vw;*/
+    display: block;
+    overflow: hidden;
+    padding: 50px 0;
+    box-sizing: border-box;
+    background-color: #5D5C61;
+    height: 350;
+}
+
+.inner_footer{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+
+}
+
+.logo_container{
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block;
+
+}
+
+.logo_container img{
+    width: 50%;
+    height:auto;
+}
+
+.footer_third{
+    width: calc(21.7% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+
+.footer_third:last-child{
+    margin-right: 0;
+}
+
+.footer_third h1{
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.footer_third a{
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    margin-right: 20px;
+    padding-bottom: 5px;
+}
+
+.footer_third li{
+    font-size: 20px;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.footer_third span{
+    color: white;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+}
+
+@media (max-width: 400px){
+    .inner_footer{
+        width: 90%;
+    }
+
+    .footer_third{
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+}

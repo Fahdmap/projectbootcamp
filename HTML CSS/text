@@ -1,0 +1,468 @@
+
+
+
+
+Atomic Steel Blue – #1A385A.
+Seagull Blue – #769ABE.
+Tomato Orange – #E46F44.
+Pink Shell – #E8AA9B.
+Plum Violet – #DCD5DC.
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/*This section for the Header*/
+.header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #1A385A; /*change the background color*/
+}
+
+.inner_header{
+    width: 1300px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    /*background-color: red;    /*change the inner background color*/
+}
+.inner_header.logo_container{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.inner_header .logo_container h1{
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "Montserrat";
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.inner_header .logo_container h1 span{
+    font-weight: 800;
+}
+
+.navigation{
+    float: right;
+    height: 100%;
+}
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0 20px;
+}
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+
+/*This section for the Hero Video*/
+
+#hero{
+    height: 100vh;
+    width: 100%;
+    background-color: #DCD5DC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero::after{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /*video background color*/
+}
+
+#hero video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    object-fit:cover;
+    font-family: 'object-fit: cover'; /*to fit to internet expl;orer*/
+}
+
+#hero .texture{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    background: url('../Images/Image/cross-stripes_background.png');
+}
+
+#hero .caption{
+    position: relative;
+    z-index: 20;
+    text-align: center;
+    color: white;
+}
+
+#hero .caption h1{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    margin-bottom: 0.5rem;
+
+}
+
+#hero .caption h2{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 0;
+    font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+
+@media screen and (min-width: 768px) /*Media Sizes phone, ipad and desktop*/
+{
+    #hero .caption h1{
+        font-size: 2.5rem;
+    }
+    #hero .caption h2{
+        font-size: 1.75rem;
+    }
+}    
+
+@media screen and (min-width: 992px)
+{
+    #hero .caption h1{
+        font-size: 3rem;
+    }
+    #hero .caption h2{
+        font-size: 2rem;
+    }
+}   
+
+@media screen and (min-width: 1200px)
+{
+    #hero .caption h1{
+        font-size: 4rem;
+    }
+    #hero .caption h2{
+        font-size: 2.5rem;
+    }
+}   
+
+
+/*This section for the footer*/
+.footer{
+    /*width: 100vw;*/
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background-color: #769ABE;
+}
+
+.inner_footer{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+
+}
+
+.logo_container{
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block;
+
+}
+
+.logo_container img{
+    width: 50%;
+    height:auto;
+}
+
+.footer_third{
+    width: calc(21.7% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+
+.footer_third:last-child{
+    margin-right: 0;
+}
+
+.footer_third h1{
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 22px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.footer_third a{
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    margin-right: 20px;
+    padding-bottom: 5px;
+}
+
+.footer_third li{
+    font-size: 20px;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.footer_third span{
+    color: white;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+}
+
+@media (max-width: 400px){
+    .inner_footer{
+        width: 90%;
+    }
+
+    .footer_third{
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/*This section for the Header*/
+.header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #1A385A; /*change the background color*/
+    z-index: 100000;
+}
+
+.inner_header{
+    width: 1300px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    /*background-color: red;    /*change the inner background color*/
+}
+.inner_header.logo_container{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.inner_header .logo_container h1{
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "Montserrat";
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.inner_header .logo_container h1 span{
+    font-weight: 800;
+}
+
+.navigation{
+    float: right;
+    height: 100%;
+}
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: right;
+    padding: 0 15px;
+}
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.active, .navigation li:hover{
+    background: cadetblue;
+    border-radius: 1px;
+}
+
+/*Original Forms*/
+
+<div class="form">
+<h1>Login Here<h1>
+<input type="email" name="email" placeholder="Enter Email Here">
+<input type="password" name="" placeholder="Enter Password">
+<button class="btnn"><a href="#">Login</a></button>
+
+
+<p class ="link">Don't have an account<br>
+<a href="#">Sign up here</a></p>
+<p class ="liw">Or log in with</p><br>
+
+<div class="icon">
+    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*leave it for now */
+
+<!--Form-->
+<div calss= "background">
+  <div class="row g-3 container ">
+    <div class="col-sm-6">
+      <label for="firstName" class="form-label">First name</label>
+      <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+      <div class="invalid-feedback">
+        Valid first name is required.
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <label for="lastName" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+      <div class="invalid-feedback">
+        Valid last name is required.
+      </div>
+    </div>
+
+    <div class="col-12">
+      <label for="username" class="form-label">Username</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" id="username" placeholder="Username" required="">
+      <div class="invalid-feedback">
+          Your username is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+      <input type="email" class="form-control" id="email" placeholder="you@example.com">
+      <div class="invalid-feedback">
+        Please enter a valid email address for shipping updates.
+      </div>
+    </div>
+
+    <div class="col-12">
+      <label for="address" class="form-label">Address</label>
+      <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+      <div class="invalid-feedback">
+        Please enter your shipping address.
+      </div>
+    </div>
+
+    <div class="col-12">
+      <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+      <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+    </div>
+
+    <div class="col-md-5">
+      <label for="country" class="form-label">Country</label>
+      <select class="form-select" id="country" required="">
+        <option value="">Choose...</option>
+        <option>United States</option>
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid country.
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <label for="state" class="form-label">State</label>
+      <select class="form-select" id="state" required="">
+        <option value="">Choose...</option>
+        <option>California</option>
+      </select>
+      <div class="invalid-feedback">
+        Please provide a valid state.
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <label for="zip" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="zip" placeholder="" required="">
+      <div class="invalid-feedback">
+        Zip code required.
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
